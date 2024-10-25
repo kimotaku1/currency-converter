@@ -1,0 +1,79 @@
+/* InputBox.css */
+.input-box-container {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px; /* Enable perspective for 3D effects */
+}
+
+.input-group, .currency-group {
+    width: 50%;
+    margin-bottom: 20px; /* Adjusted for better spacing */
+    transform: translateZ(0); /* Ensures proper rendering for 3D effects */
+}
+
+.label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    display: block;
+}
+
+.amount-input {
+    outline: none;
+    width: 100%;
+    padding: 12px; /* Increased padding for better usability */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.amount-input:focus {
+    border-color: #8A2BE2;
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.5); /* Focus shadow effect */
+    transform: translateY(-2px); /* Lift effect on focus */
+}
+
+.currency-label {
+    color: #333;
+    margin-bottom: 10px; /* Adjusted for consistency */
+}
+
+.currency-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s; /* Added transform transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.currency-select:hover {
+    background-color: #e6e6e6;
+    border-color: #8A2BE2;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Add a button style if needed */
+.convert-button {
+    padding: 12px 20px;
+    background-color: #8A2BE2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.convert-button:hover {
+    background-color: #7a24d2;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
